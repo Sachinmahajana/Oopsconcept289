@@ -2,11 +2,11 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the oops concept program");
             Console.WriteLine("Please choose the proram given below");
-            Console.WriteLine("\n1:Singleinheritance");
+            Console.WriteLine("\n1:Singleinheritance\n2:Multilevelinheritance");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -19,6 +19,17 @@
                     car.mileage = 22.94f;
                     car.CarDetails();
                     car.PrintMileage();
+                    break;
+                case 2:
+                    Maruti cars = new Maruti();
+                    cars.Name = "Celrio";
+                    cars.Price = 600000;
+                    cars.model = "Vxi";
+                    cars.speed = 100;
+                    cars.Mileage = 25.5f;
+                    cars.CarDetails();
+                    cars.PrintMileage();
+                    cars.PrintSpeed();
                     break;
             }
         }
