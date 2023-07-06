@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to the oops concept program");
             Console.WriteLine("Please choose the proram given below");
-            Console.WriteLine("\n1:Singleinheritance\n2:Multilevelinheritance");
+            Console.WriteLine("\n1:Singleinheritance\n2:Multilevelinheritance\n3:MethodOverloading");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -30,6 +30,10 @@
                     cars.CarDetails();
                     cars.PrintMileage();
                     cars.PrintSpeed();
+                    break;
+                case 3:
+                    Programs Obj = new Programs();
+                    Obj.Add(12, 2);
                     break;
             }
         }

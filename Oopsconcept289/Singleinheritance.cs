@@ -10,7 +10,7 @@ namespace Oopsconcept289
     {
         public string name;
         public string model;
-        public int price;
+        public int price;  
         public void CarDetails()
         {
             Console.WriteLine("Car Name is:" + name);
