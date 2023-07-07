@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to the oops concept program");
             Console.WriteLine("Please choose the proram given below");
-            Console.WriteLine("\n1:Singleinheritance\n2:Multilevelinheritance\n3:MethodOverloading\n4:Methodoverriding");
+            Console.WriteLine("\n1:Singleinheritance\n2:Multilevelinheritance\n3:MethodOverloading\n4:Methodoverriding\n5:Abstration");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -38,6 +38,10 @@
                 case 4:
                     Dog tommy = new Dog();
                     tommy.Eat();
+                    break;
+                case 5:
+                    ParttimeEmployee empn = new ParttimeEmployee();
+                    empn.GetSalary();
                     break;
             }
         }
