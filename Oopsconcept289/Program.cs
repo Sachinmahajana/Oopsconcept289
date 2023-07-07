@@ -50,6 +50,11 @@ namespace Oopsconcept289
                     g.SetValue(4567);
                     Console.WriteLine("ATM PIN:" + g.GetReturn());
                     break;
+                case 7:
+                    PartTimeemployee pte = new PartTimeemployee();
+                    pte.show();
+                    pte.show2();
+                    break;
             }
         }
     }
