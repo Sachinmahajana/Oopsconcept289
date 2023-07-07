@@ -1,4 +1,6 @@
-﻿namespace Oopsconcept289
+﻿using static Oopsconcept289.Encapsulation;
+
+namespace Oopsconcept289
 {
     internal class Program
     {
@@ -6,7 +8,7 @@
         {
             Console.WriteLine("Welcome to the oops concept program");
             Console.WriteLine("Please choose the proram given below");
-            Console.WriteLine("\n1:Singleinheritance\n2:Multilevelinheritance\n3:MethodOverloading\n4:Methodoverriding\n5:Abstration");
+            Console.WriteLine("\n1:Singleinheritance\n2:Multilevelinheritance\n3:MethodOverloading\n4:Methodoverriding\n5:Abstration\n6:Encapsulation");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -42,6 +44,11 @@
                 case 5:
                     ParttimeEmployee empn = new ParttimeEmployee();
                     empn.GetSalary();
+                    break;
+                case 6:
+                    A g = new A();
+                    g.SetValue(4567);
+                    Console.WriteLine("ATM PIN:" + g.GetReturn());
                     break;
             }
         }
